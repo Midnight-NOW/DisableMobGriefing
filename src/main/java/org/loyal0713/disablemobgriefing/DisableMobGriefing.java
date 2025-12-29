@@ -36,6 +36,8 @@ public final class DisableMobGriefing extends JavaPlugin implements Listener {
         config.addDefault("wither_griefing", true);
         config.addDefault("wither_skull_griefing", true);
         config.addDefault("bee_griefing", true);
+        config.addDefault("frog_griefing", true);
+        config.addDefault("turtle_griefing", true);
         config.options().copyDefaults(true);
         saveConfig();
 
