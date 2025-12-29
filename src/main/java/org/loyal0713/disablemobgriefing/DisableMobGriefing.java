@@ -29,8 +29,6 @@ public final class DisableMobGriefing extends JavaPlugin implements Listener {
         config.addDefault("player_griefing", true);
         config.addDefault("rabbit_griefing", true);
         config.addDefault("sheep_griefing", true);
-        config.addDefault("frog_griefing", true);
-        config.addDefault("turtle_griefing", true);
         config.addDefault("silverfish_griefing", true);
         config.addDefault("villager_griefing", true);
         config.addDefault("wither_griefing", true);
@@ -38,6 +36,10 @@ public final class DisableMobGriefing extends JavaPlugin implements Listener {
         config.addDefault("bee_griefing", true);
         config.addDefault("frog_griefing", true);
         config.addDefault("turtle_griefing", true);
+        config.addDefault("zombie_griefing", true);
+        config.addDefault("slime_griefing", true);
+        config.addDefault("magma_cube_griefing", true);
+        config.addDefault("ravager_griefing", true);
         config.options().copyDefaults(true);
         saveConfig();
 
