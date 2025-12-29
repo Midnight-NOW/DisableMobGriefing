@@ -35,12 +35,20 @@ public class CommandManager implements CommandExecutor {
                 success = true;
             }
 
-            if(args.length == 2) {
+            if (args.length == 2) {
                 boolean allowedToGrief = Boolean.parseBoolean(args[1]);
+
                 DisableMobGriefing.config.set(entityName + "_griefing", allowedToGrief);
                 DisableMobGriefing.config.options().copyDefaults(true);
-                success = true;
+
+                sender.sendMessage(
+                     entityName + " griefing is now " +
+                     (allowedToGrief ? "enabled" : "disabled")
+                    );
+        
+               success = true;
             }
+
         }
         return success;
     }
